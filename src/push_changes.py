@@ -47,8 +47,3 @@ def commit_and_push():
                 print(result.stderr)
         except Exception as e:
             print(f"Error Running Command: \n\n {e}")
-
-
-
-
-commit_and_push()
