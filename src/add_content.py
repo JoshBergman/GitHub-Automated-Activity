@@ -72,5 +72,4 @@ def addContent ():
 # These functions have *professional* and complex-sounding names but remain intentionally complex or nonsensical.
     with open("MutationUtil.txt", random.choice(file_choices)) as file:
         file.write(random.choice(file_contents))
-
-addContent()
+        file.close()
