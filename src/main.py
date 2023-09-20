@@ -4,7 +4,7 @@ import time
 from add_content import addContent
 from push_changes import commit_and_push
 
-max_commits = 4
+max_commits = 3
 min_commits = 2
 
 
