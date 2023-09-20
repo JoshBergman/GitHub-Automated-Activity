@@ -1,38 +1,15 @@
-import random
 import subprocess
 import time
 import os
 
-commit_messages = [
-    "feat: Add user authentication module",
-    "fix: Resolve issue with form validation",
-    "refactor: Simplify database schema",
-    "docs: Update README with installation instructions",
-    "style: Format code according to PEP 8 guidelines",
-    "test: Add unit tests for user registration",
-    "chore: Update dependencies to latest versions",
-    "perf: Optimize database queries for faster retrieval",
-    "ci: Configure continuous integration for automated testing",
-    "revert: Revert previous commit 'fix: Issue #123'",
-    "feat(core): Implement JWT authentication",
-    "fix(ui): Correct button alignment in header",
-    "docs(api): Add API documentation for endpoints",
-    "test(e2e): Write end-to-end tests for user login",
-    "refactor(auth): Extract authentication logic into separate module",
-    "chore(deps): Update npm packages to resolve security vulnerabilities",
-    "style(css): Improve code formatting in stylesheets",
-    "perf(api): Optimize API response time by caching results",
-    "fix: Typo in error message",
-    "chore: Cleanup unused assets"
-]
 
-commands = [
-    "git add .",
-    "git commit -m \"" + random.choice(commit_messages) + "\"",
-    "git push"
-]
+def commit_and_push(commit_message):
+    commands = [
+        "git add .",
+        "git commit -m \"" + commit_message + "\"",
+        "git push"
+    ]
 
-def commit_and_push():
     path = os.path.dirname(os.path.abspath(__file__))
     os.chdir(path)
 
