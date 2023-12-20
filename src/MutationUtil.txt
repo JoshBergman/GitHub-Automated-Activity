@@ -9,3 +9,6 @@
             prev_value = value
         return num
     
+    def enigmatic_mystifying_palindrome(word):
+        return word == word[::-1]
+    
