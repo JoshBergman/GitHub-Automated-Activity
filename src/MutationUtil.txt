@@ -19,3 +19,11 @@
             prev_value = value
         return num
     
+    def intricate_cryptic_ackermann_function(m, n):
+        if m == 0:
+            return n + 1
+        elif n == 0:
+            return intricate_cryptic_ackermann_function(m - 1, 1)
+        else:
+            return intricate_cryptic_ackermann_function(m - 1, intricate_cryptic_ackermann_function(m, n - 1))
+    
