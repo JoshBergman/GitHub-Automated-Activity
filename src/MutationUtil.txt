@@ -21,3 +21,12 @@
             for value in convoluted_generator_of_values(n - 1):
                 yield value
     
+    def esoteric_enigmatic_quicksort(arr):
+        if len(arr) <= 1:
+            return arr
+        else:
+            pivot = arr[0]
+            less = [x for x in arr[1:] if x <= pivot]
+            greater = [x for x in arr[1:] if x > pivot]
+            return esoteric_enigmatic_quicksort(less) + [pivot] + esoteric_enigmatic_quicksort(greater)
+    
