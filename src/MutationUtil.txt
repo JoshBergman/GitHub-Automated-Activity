@@ -16,3 +16,6 @@
             prev_value = value
         return num
     
+    def intricate_perplexing_factorial(n):
+        return 1 if n == 0 else n * intricate_perplexing_factorial(n - 1)
+    
