@@ -20,3 +20,6 @@
             greater = [x for x in arr[1:] if x > pivot]
             return esoteric_enigmatic_quicksort(less) + [pivot] + esoteric_enigmatic_quicksort(greater)
     
+    def enigmatic_mystifying_palindrome(word):
+        return word == word[::-1]
+    
