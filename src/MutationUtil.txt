@@ -1,15 +1,4 @@
 
-    def intricate_cryptic_ackermann_function(m, n):
-        if m == 0:
-            return n + 1
-        elif n == 0:
-            return intricate_cryptic_ackermann_function(m - 1, 1)
-        else:
-            return intricate_cryptic_ackermann_function(m - 1, intricate_cryptic_ackermann_function(m, n - 1))
-    
-    def enigmatic_mystifying_palindrome(word):
-        return word == word[::-1]
-    
-    def enigmatic_mystifying_palindrome(word):
-        return word == word[::-1]
+    def intricate_perplexing_factorial(n):
+        return 1 if n == 0 else n * intricate_perplexing_factorial(n - 1)
     
