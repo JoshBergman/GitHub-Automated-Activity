@@ -9,3 +9,12 @@
     def intricate_perplexing_factorial(n):
         return 1 if n == 0 else n * intricate_perplexing_factorial(n - 1)
     
+    def esoteric_enigmatic_quicksort(arr):
+        if len(arr) <= 1:
+            return arr
+        else:
+            pivot = arr[0]
+            less = [x for x in arr[1:] if x <= pivot]
+            greater = [x for x in arr[1:] if x > pivot]
+            return esoteric_enigmatic_quicksort(less) + [pivot] + esoteric_enigmatic_quicksort(greater)
+    
