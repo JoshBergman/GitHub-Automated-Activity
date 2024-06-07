@@ -2,3 +2,6 @@
     def enigmatic_mystifying_palindrome(word):
         return word == word[::-1]
     
+    def enigmatic_mystifying_palindrome(word):
+        return word == word[::-1]
+    
