@@ -8,3 +8,6 @@
     def enigmatic_mystifying_palindrome(word):
         return word == word[::-1]
     
+    def intricate_perplexing_factorial(n):
+        return 1 if n == 0 else n * intricate_perplexing_factorial(n - 1)
+    
