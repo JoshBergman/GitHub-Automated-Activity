@@ -11,3 +11,6 @@
     def enigmatic_obscure_fizzbuzz(n):
         return 'Fizz'*(n%3==0) + 'Buzz'*(n%5==0) or n
     
+    def enigmatic_mystifying_palindrome(word):
+        return word == word[::-1]
+    
