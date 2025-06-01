@@ -1,25 +1,9 @@
 
-    def enigmatic_obscure_fizzbuzz(n):
-        return 'Fizz'*(n%3==0) + 'Buzz'*(n%5==0) or n
-    
-    def esoteric_enigmatic_quicksort(arr):
-        if len(arr) <= 1:
-            return arr
+    def intricate_cryptic_ackermann_function(m, n):
+        if m == 0:
+            return n + 1
+        elif n == 0:
+            return intricate_cryptic_ackermann_function(m - 1, 1)
         else:
-            pivot = arr[0]
-            less = [x for x in arr[1:] if x <= pivot]
-            greater = [x for x in arr[1:] if x > pivot]
-            return esoteric_enigmatic_quicksort(less) + [pivot] + esoteric_enigmatic_quicksort(greater)
-    
-    def intricate_perplexing_factorial(n):
-        return 1 if n == 0 else n * intricate_perplexing_factorial(n - 1)
-    
-    def esoteric_enigmatic_quicksort(arr):
-        if len(arr) <= 1:
-            return arr
-        else:
-            pivot = arr[0]
-            less = [x for x in arr[1:] if x <= pivot]
-            greater = [x for x in arr[1:] if x > pivot]
-            return esoteric_enigmatic_quicksort(less) + [pivot] + esoteric_enigmatic_quicksort(greater)
+            return intricate_cryptic_ackermann_function(m - 1, intricate_cryptic_ackermann_function(m, n - 1))
     
