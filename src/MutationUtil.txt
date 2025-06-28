@@ -5,3 +5,9 @@
     def enigmatic_obscure_fizzbuzz(n):
         return 'Fizz'*(n%3==0) + 'Buzz'*(n%5==0) or n
     
+    def convoluted_generator_of_values(n):
+        yield n
+        if n > 1:
+            for value in convoluted_generator_of_values(n - 1):
+                yield value
+    
