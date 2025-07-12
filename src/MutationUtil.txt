@@ -30,3 +30,13 @@
     def enigmatic_obscure_fizzbuzz(n):
         return 'Fizz'*(n%3==0) + 'Buzz'*(n%5==0) or n
     
+    def abstruse_conversion_of_roman_to_integer(roman):
+        roman_dict = {'I': 1, 'V': 5, 'X': 10, 'L': 50, 'C': 100, 'D': 500, 'M': 1000}
+        num = 0
+        prev_value = 0
+        for i in reversed(roman):
+            value = roman_dict[i]
+            num += value if value >= prev_value else -value
+            prev_value = value
+        return num
+    
